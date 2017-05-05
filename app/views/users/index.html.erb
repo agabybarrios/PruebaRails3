@@ -1,0 +1,8 @@
+<h1>Usuarios</h1>
+<p>Ve que están escuchando tus amigos</p>
+
+<% @users.each do |user| %>
+  <%= user.name %>
+  <%= link_to 'Ver lista', user_path(user) %>
+
+<% end %>
